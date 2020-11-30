@@ -71,7 +71,7 @@ method Q2(x : int, y : int) returns (big : int, small : int)
    {big, small := y, x;}
 }
 ```
-**Part A**: Dafny will not be able to prove the above program correct because its specification is incomplete. Figure out exactly why the proof fails, and from there derive the missing part of the specification.  **Changing the postcondition or method body in not allowed**; rather, use weakest precondition calculus to find a suitable precondition. Show each step of the derivation. **The precondition must come from the proof using the weakest precondition calculus.**
+**Part A**: Dafny will not be able to prove the above program correct because its specification is incomplete. Figure out exactly why the proof fails, and from there derive the missing part of the specification.  **Changing the postcondition or method body is not allowed**; rather, use weakest precondition calculus to find a suitable precondition. Show each step of the derivation. **The precondition must come from the proof using the weakest precondition calculus.**
 
 **Part B**: 
 Show that your answer from **Part A** enables Dafny to prove the program correct.
@@ -103,6 +103,8 @@ method Q3(n0 : int, m0 : int) returns (res : int)
 **Part B**: Construct a paper-pencil proof of the method showing all five obligations required to compute the weakest-precondition for the loop for total correctness.
 
 ## 4. Total Correctness Relative to Recursive Definition (30 points)
+
+**OPTIONAL -- NOT REQUIRED**
 
 The factorial function, `n!` computes the product of all numbers from 1 up to n (e.g., `3! = 1 * 2 * 3 = 6`). The following Dafny program iteratively calculates the factorial of a number.
 
