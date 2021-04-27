@@ -38,7 +38,7 @@ Whenever you are asked to implement something using Dafny you should:
 
 # Problems
 
-## 1. Paper-pencil Proof (20 points)
+## 1. Paper-pencil Proof
 
 Below is the familiar Dafny program for computing an absolute value of a number
 
@@ -57,7 +57,7 @@ method Abs(x : int) returns (y : int)
 
 Use the weakest precondition calculus to prove that the program is correct with respect to the specification. Show the entire proof.
 
-## 2. Complete the Specification (20 points)
+## 2. Complete the Specification
 
 Below is a small Dafny program
 
@@ -76,7 +76,7 @@ method Q2(x : int, y : int) returns (big : int, small : int)
 **Part B**: 
 Show that your answer from **Part A** enables Dafny to prove the program correct.
 
-## 3. Total Correctness with Loops (30 points)
+## 3. Total Correctness with Loops
 
 The following method multiplies two integers.
 ```java
@@ -102,9 +102,9 @@ method Q3(n0 : int, m0 : int) returns (res : int)
 
 **Part B**: Construct a paper-pencil proof of the method showing all five obligations required to compute the weakest-precondition for the loop for total correctness.
 
-## 4. Total Correctness Relative to Recursive Definition (30 points)
+## 4. Total Correctness Relative to Recursive Definition
 
-**OPTIONAL -- NOT REQUIRED**
+**OPTIONAL -- use for practice**
 
 The factorial function, `n!` computes the product of all numbers from 1 up to n (e.g., `3! = 1 * 2 * 3 = 6`). The following Dafny program iteratively calculates the factorial of a number.
 
@@ -137,3 +137,7 @@ The variables are natural numbers. Prove that the program is correct with respec
 # Submission
 
 Submit to canvas the URL for the pull request with the Dafny models and paper-pencil proofs. The pull request should include a file **EXPLANATIONS.md** explaining your solution to each problem and how to load each into Dafny to see if it is able to prove the models correct. It should also make clear where to find the proofs. Please be organized and make it easy to find and grade each problem.
+
+# Rubic
+
+See Canvas for details
